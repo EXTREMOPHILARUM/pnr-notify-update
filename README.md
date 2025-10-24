@@ -23,7 +23,7 @@ Automated Indian Railway PNR status checker with Google Chat notifications.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/pnr-notify-update.git
+   git clone https://github.com/EXTREMOPHILARUM/pnr-notify-update.git
    cd pnr-notify-update
    ```
 
