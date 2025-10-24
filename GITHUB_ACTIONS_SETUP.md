@@ -37,28 +37,17 @@ The GitHub Actions workflow (`.github/workflows/check-pnr-status.yml`) will:
    - **Value:** Your Google Chat webhook URL (from SETUP_NOTIFICATIONS.md)
 5. Click **Add secret**
 
-### Step 3: Update .gitignore
+### Step 3: Understand .gitignore Behavior
 
-The `.gitignore` file already excludes `pnr_status_history.json` from local commits. However, since we want the GitHub Actions workflow to commit this file, we need to force-add it once:
+The `.gitignore` file excludes `pnr_status_history.json` from local commits to prevent accidental commits of sensitive data. However, the GitHub Actions workflow uses `git add -f` (force) to override this and commit the file automatically.
 
-```bash
-# Remove pnr_status_history.json from .gitignore temporarily for GitHub Actions
-# OR force add it once:
-git add -f pnr_status_history.json
-git commit -m "Add PNR status history for GitHub Actions tracking"
-git push
-```
+This means:
+- **Local development**: The file is ignored and won't be committed accidentally
+- **GitHub Actions**: The file is force-added and committed on every status change
 
-Then add it back to `.gitignore` to exclude it from local development.
+No manual intervention needed - the workflow handles this automatically!
 
-### Step 4: Enable GitHub Actions
-
-1. Go to your repository on GitHub
-2. Click the **Actions** tab
-3. GitHub Actions should be enabled by default
-4. You should see the "Check PNR Status" workflow listed
-
-### Step 5: Test the Workflow
+### Step 4: Test the Workflow
 
 You can manually trigger the workflow to test it:
 
