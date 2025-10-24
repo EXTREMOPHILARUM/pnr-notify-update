@@ -9,9 +9,10 @@ Python script that queries the ConfirmTkt API to check Indian railway PNR (Passe
 ## Development Commands
 
 - Run the script: `uv run python get_status.py`
-- Install dependencies: `uv pip install requests`
+- Install dependencies: `uv pip install -r requirements.txt`
 - List installed packages: `uv pip list`
 - Setup notifications: See `SETUP_NOTIFICATIONS.md`
+- Setup GitHub Actions: See `GITHUB_ACTIONS_SETUP.md`
 
 ## Environment Variables
 
@@ -43,4 +44,8 @@ The script includes comprehensive exception handling:
 
 ## Dependencies
 
-Uses only the `requests` library for HTTP calls. Managed via `uv` for Python environment management.
+Dependencies are tracked in `requirements.txt`:
+- `requests` - HTTP library for API calls
+- Additional dependencies: `certifi`, `charset-normalizer`, `idna`, `urllib3`
+
+Managed via `uv` for Python environment management.

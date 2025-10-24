@@ -13,6 +13,8 @@ ENV/
 .env.local
 
 # PNR status history (may contain sensitive data)
+# Note: This file is tracked by GitHub Actions for automated updates
+# but excluded from local development commits. See GITHUB_ACTIONS_SETUP.md
 pnr_status_history.json
 
 # Logs
