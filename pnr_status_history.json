@@ -1,6 +1,6 @@
 {
   "8439632790": {
-    "timestamp": "2025-10-24T10:06:07.455900",
+    "timestamp": "2025-10-24T10:09:08.162354",
     "train": "22230 CSMT VANDEBHARAT",
     "doj": "27-10-2025",
     "route": "Khed \u2192 Mumbai",
@@ -9,14 +9,14 @@
       {
         "number": 1,
         "booking_status": "GNWL  44",
-        "current_status": "GNWL  22",
+        "current_status": "GNWL  21",
         "prediction": "Low Chance",
         "prediction_percentage": "3"
       }
     ]
   },
   "8239524689": {
-    "timestamp": "2025-10-24T10:06:07.990372",
+    "timestamp": "2025-10-24T10:09:09.489162",
     "train": "22230 CSMT VANDEBHARAT",
     "doj": "27-10-2025",
     "route": "Khed \u2192 Mumbai",
@@ -25,7 +25,7 @@
       {
         "number": 1,
         "booking_status": "W/L  65,RLGN",
-        "current_status": "RLWL  38",
+        "current_status": "RLWL  37",
         "prediction": "45% Chance",
         "prediction_percentage": "45"
       }
