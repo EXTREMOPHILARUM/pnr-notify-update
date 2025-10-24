@@ -16,7 +16,7 @@ Automated Indian Railway PNR status checker with Google Chat notifications.
 ### Prerequisites
 
 - Python 3.8+
-- [uv](https://github.com/astral-sh/uv) package manager
+- [uv](https://github.com/astral-sh/uv) package manager (for local development)
 - Google Chat webhook (optional, for notifications)
 
 ### Installation

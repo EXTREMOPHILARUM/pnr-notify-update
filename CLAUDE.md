@@ -47,5 +47,3 @@ The script includes comprehensive exception handling:
 Dependencies are tracked in `requirements.txt`:
 - `requests` - HTTP library for API calls
 - Additional dependencies: `certifi`, `charset-normalizer`, `idna`, `urllib3`
-
-Managed via `uv` for Python environment management.

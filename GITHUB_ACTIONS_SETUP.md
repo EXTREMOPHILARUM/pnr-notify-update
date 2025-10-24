@@ -10,6 +10,8 @@ The GitHub Actions workflow (`.github/workflows/check-pnr-status.yml`) will:
 - Send Google Chat notifications if status changes
 - Commit the updated `pnr_status_history.json` back to the repository
 
+**Note:** GitHub Actions uses standard Python and pip, while local development uses `uv` for faster dependency management.
+
 ## Setup Instructions
 
 ### Step 1: Push Code to GitHub
